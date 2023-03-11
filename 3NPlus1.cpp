@@ -44,7 +44,12 @@ int main()
     int a,b;  
     // cout << "Enter Range: ";
     cin>> a;
-    cin>> b; 
+    cin>> b;
+    if(a<1 || a>100000 || b<1 || b>100000){
+        cout<<"Plz enter values between 0 and 100000 : "; 
+        cin>>a; 
+        cin>>b; 
+    }
     int max=1; 
 
     for (int i = a; i <=b; i++)
